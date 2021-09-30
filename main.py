@@ -7,35 +7,15 @@ constName = 'Анголюк Стас'
 
 
 def cipherCreate():
-
-    print('Task 21-------------------------------------')
-
-
-    print('Task 33-------------------------------------')
-    y1 = int(input('Введіть рік: '))
-    if y1 % 400 == 0: print('Високосний')
-    elif y1 % 100 == 0: print('Невисокосний')
-    elif y1 % 4 == 0: print('Високосний')
-    else: print('Невисокосний')
-    print('Task 13-------------------------------------')
-    m2 = float(input('Введіть силу: '))
-    if m2 >= 10: print('meteoric')
-    elif m2 > 8: print('great')
-    elif m2 > 7: print('major')
-    elif m2 > 6: print('strong')
-    elif m2 > 5: print('moderate')
-    elif m2 > 4: print('light')
-    elif m2 > 3: print('minor')
-    elif m2 >= 2: print('very minor')
-    else: print('micro')
-    print('Task 3-------------------------------------')
-    chr = str(input())
-    if len(chr)==1:
-        if chr == 'a' or chr == 'o' or chr == 'u' or chr == 'e' or chr == 'i': print('Голосна')
-        elif chr == 'y': print('Може бути і голосною і приголосною')
-        else: print('Приголосна або не буква')
-    else: print('Треба лише один символ вводити...')
-
+    h = int(input('Висота: '))
+    w = int(input('Довжина: '))
+    array = [[0] * w for i in range(h)]
+    num = 0
+    for i in range(h):
+        for j in range(w):
+            array[i][j] = num
+            num += 1
+        print(array[i])
 
 
 def printTimeStamp(myName):
@@ -223,3 +203,30 @@ printTimeStamp(constName)
 #     p7 += 30 * 9.86 + (M37 - 30) * 11.22
 # else: p7 += M37 * 9.86
 # print('Ваш рахунок: ', format(p7, '.2f'))
+# print('Task 21-------------------------------------')
+#
+#
+# print('Task 33-------------------------------------')
+# y1 = int(input('Введіть рік: '))
+# if y1 % 400 == 0: print('Високосний')
+# elif y1 % 100 == 0: print('Невисокосний')
+# elif y1 % 4 == 0: print('Високосний')
+# else: print('Невисокосний')
+# print('Task 13-------------------------------------')
+# m2 = float(input('Введіть силу: '))
+# if m2 >= 10: print('meteoric')
+# elif m2 > 8: print('great')
+# elif m2 > 7: print('major')
+# elif m2 > 6: print('strong')
+# elif m2 > 5: print('moderate')
+# elif m2 > 4: print('light')
+# elif m2 > 3: print('minor')
+# elif m2 >= 2: print('very minor')
+# else: print('micro')
+# print('Task 3-------------------------------------')
+# chr = str(input())
+# if len(chr)==1:
+#     if chr == 'a' or chr == 'o' or chr == 'u' or chr == 'e' or chr == 'i': print('Голосна')
+#     elif chr == 'y': print('Може бути і голосною і приголосною')
+#     else: print('Приголосна або не буква')
+# else: print('Треба лише один символ вводити...')
